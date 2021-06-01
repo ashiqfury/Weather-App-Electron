@@ -4,8 +4,8 @@
   "description": "Weather app using electron js",
   "main": "main.js",
   "scripts": {
-    
-    "start": "electron-packager ."
+    "start": "electron .",
+    "start-pack": "electron-packager ."
   },
   "author": "Fury Phoenix",
   "license": "ISC",
