@@ -4,11 +4,13 @@
   "description": "Weather app using electron js",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    
+    "start": "electron-packager ."
   },
   "author": "Fury Phoenix",
   "license": "ISC",
   "dependencies": {
-    "electron": "^13.0.1"
+    "electron": "^13.0.1",
+    "electron-packager": "^15.2.0"
   }
 }
