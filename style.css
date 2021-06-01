@@ -1,0 +1,120 @@
+:root {
+    /* CSS HSL */
+    --imperial-red: hsla(355, 78%, 56%, 1);
+    --imperial-red-light: hsla(355, 78%, 66%, 1);
+    --honeydew: hsla(105, 55%, 96%, 1);
+    --powder-blue: hsla(182, 43%, 76%, 1);
+    --celadon-blue: hsla(203, 39%, 44%, 1);
+    --prussian-blue: hsla(215, 50%, 23%, 1);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--imperial-red);
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+header h1 {
+    margin-top: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 42px;
+    text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+}
+main {
+    width: 450px;
+    height: auto;
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.15);
+    cursor: default;
+}
+main .input-fields {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+.input-fields input,
+.input-fields button {
+    margin: 30px -15px 10px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    outline: none;
+    transition: 300ms;
+    font-size: 16px;
+    border-radius: 3px 0 0 3px;
+}
+.input-fields button {
+    background: #000;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.output {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.output > div {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.output div div {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.input-fields input:focus,
+.input-fields button:focus,
+.input-fields button:hover {
+    border-color: var(--imperial-red);
+}
+.input-fields button:hover,
+.input-fields button:focus {
+    background: var(--imperial-red);
+}
+#temp {
+    color: var(--imperial-red);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.display {
+    display: none;
+}
+::selection {
+    background: var(--imperial-red);
+}

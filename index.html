@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+
+    <main>
+        <div class="input-fields">
+            <input type="text" placeholder="Enter the city" spellcheck="false">
+            <button>Search</button>
+        </div>
+
+        <div class="output">
+            <div>
+                <div>
+                    <h2 id="name">No City Found</h2>
+                    <p id="country"></p>
+                </div>
+                <img src="" class="display">
+            </div>
+            <h1 id="temp">0 C</h1>
+            <p id="desc">No description</p>
+            <p id="wind">No Speed</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Checking the machine has internet connection.
+        console.log('Initially ' + (window.navigator.onLine ? 'on' : 'off') + 'line');
+
+        window.addEventListener('online', () => alert('You are now online'));
+        window.addEventListener('offline', () => console.log('You are now offline'));
+    </script>
+    <script>
+        require('./renderer.js');
+    </script>
+</body>
+
+</html>
