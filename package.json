@@ -10,6 +10,7 @@
   "author": "Fury Phoenix",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "electron": "^13.0.1",
     "electron-packager": "^15.2.0"
   }
